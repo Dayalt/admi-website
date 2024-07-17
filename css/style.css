@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+html,body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+body{
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;  
+  color:  #22193F;
+}
+  header{
+  background-image: url(/imgenes/banner-principal.jpg);
+  background-size: cover;
+  height: 50vh;
+  color: white;
+}
+
+
+nav a, button{
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.nav-link{
+  color:  #22193F !important;
+}
+
+.quienes-somos{
+  width: auto;
+  height: 40vh;
+  background-color:  #E8E8E8;
+}
+
+.ayuda{
+  height: 70vh;
+}
+
+/* .preguntas{
+  height: 60vh;
+} */
+
+.P-buscaAyuda{
+  margin-bottom: 50px;
+}
+
+.titulo, .titulo-Secundarios{
+  font-family: 'Nunito', sans-serif;
+}
+
+.titulo{
+  font-weight: 900;
+}
+
+.titulo-Secundarios{
+  font-size: 28px;
+}
+
+.pre-titulo{
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+.boton{
+  width: auto;
+  font-size: 16px;
+  background-color: #E21982;/*color botón*/
+  color: white; /*color texto*/
+  padding: 7px; /*espacio alrededor texto*/
+  text-decoration: none; /*decoración texto*/
+  border-radius: 50px; /*bordes redondos*/
+  border: none;
+}
+
+.boton:hover{
+  background-color: #9f1258; /*color botón hover*/
+}
+
+.contenedor-acerca{
+  width: auto;
+}
+
+.nav-item:hover{  
+  background-color: #d3d3d342;
+}
+
+#banda-rosa{
+  background-color:  #E21982;
+  height: 20vh;
+}
+
+#banda-rosa .boton{
+  border: 0.01px solid white;
+}
+
+.titulo-especial{
+  font-size: 23px;
+  color: white;
+}
+
+.Bajada-banner-principal{
+  font-size: 22px;
+}
+
+.footer{
+  font-size: 14px;
+}
+
+.footer .copyright{
+  font-size: 12px;
+}
+
+#banner-seg{
+  background-image: url(/imgenes/banner-secundario.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+.Bajada-banner-principal{
+  color: white;
+}
+option{
+ width: 2em; 
+}
+
+footer{
+  background-color:  #22193F;
+  color: white;
+}
+
+#contenedor-iconos{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.iconos {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+}
+
+
+span {
+  position: relative;
+  border-radius: 50%;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+
+.bi {
+  position: absolute;
+  top: 6px;
+  right: 25%;
+  color: #E21982;
+  padding: 0;
+  margin: 0;
+} 
+
+.preguntas-img {
+  background-image: url(/imgenes/ilustracion-faqs.svg) !important;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding: 20px;
+}
+  
+
+@media screen and (max-width: 395px) {
+
+  #menu{
+    align-items: center;
+  }
+
+
+  .nav{
+    padding-right: 0em;
+  }
+  .nav-link {
+    color:  #22193F !important;
+    padding: 10px !important;
+  }
+
+  .boton-login {
+    /* position: absolute;
+    top: 2px;
+    left: 18em; */
+    width: 5rem;
+  
+  }
+ 
+
+  .contenido-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto-banner-p{
+    font-size: 16px;
+  }
+
+  #boton-2{
+    width: 10em;
+
+  }
+
+  .quienes-somos{
+    width: auto;
+    height: auto;
+    /* background-color: aqua; */ /*para ubicar la caja*/
+  }
+  .pre-titulo-sm-1{
+    padding-top: 6em;
+  }
+  .w-p{
+    width: 100%;
+    text-align: justify;
+  }
+  .w-p p{
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  #ayuda{
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: auto;
+    
+  } 
+  .P-buscaAyuda{
+    font-size: 16px;
+  }
+
+
+  .preguntas{
+    padding-top: 5em;
+ /* background-color: aqua; */ /*para ubicar la caja*/
+  }
+  
+  .iconos {
+    margin: 0;
+    padding: 0;
+    width: 12%;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  body{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.1rem;
+  }
+  .btn-primary {
+    position: absolute;
+    top: 0;
+    left: 18em;
+  }
+  nav{
+    height: 10vh;
+  }
+
+  .nav{
+    padding-right: 0em;
+  }
+
+  /* .nav-link {
+    font-size: 0.8rem !important; 
+  } */
+  .quienes-somos{
+    width: auto;
+    height: auto;
+ /* background-color: aqua; */ /*para ubicar la caja*/
+  }
+
+  .w-p{
+    width: 100%;
+    text-align: justify;
+
+  }
+
+  .w-p p{
+    text-align: justify;
+    padding-bottom: 1em;
+  }
+
+  .iconos {
+    margin: 0;
+    padding: 0;
+    width: 12%;
+  }
+}
+
+@media (max-width: 988px) {
+
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .element-menu {
+    flex: 0 0 auto;
+    width: auto;
+    margin: auto;
+  }
+  #main-menu {
+    flex: 1 1 100%;
+  }
+  .element-menu {
+    flex: 0 0 auto;
+    width: auto;
+    margin: auto 0;
+  }
+  .element-menu img{
+    padding-left: 20px;
+  }
+
+  .imagen2{
+    width: 1em;
+  }
+  .nav-link {
+    font-size: 1rem !important; 
+  }
+  .pre-titulo,
+  .titulo-Secundarios {
+    text-align: center;
+  }
+
+  .pre-titulo{
+    margin-top: -5em;
+  }
+  .titulo-Secundarios{
+    margin-bottom: 2em;
+  }
+
+  #container-form-floating {
+    margin-right: 20em;
+  }
+  
+  .imagen2 img {
+    width: 22em;
+    height: auto;
+  }
+
+  .iconos {
+    margin: 0;
+    padding: 0;
+    width: 12%;
+  }
+  span{
+    height: 24px;
+  }
+  .bi {
+    top: 3.5px;
+    right: 16%;
+  } 
+}
+
